@@ -1,7 +1,7 @@
 /**
  * @file project_main.c
  * @author 260162
- * @brief Activity_1
+ * @brief main program activity
  * @version 0.1
  * @date 2021-04-24
  * 
@@ -18,11 +18,11 @@
 
 
 /**
- * @brief Initialize all the peripherals
+ * @brief All the peripherals are initialized
  * 
  */
 
-void peripheral_init(void)
+void init_peripheral(void)
 {
     /*LED and Switch pins are Configured*/
     LED_Init();
@@ -41,7 +41,7 @@ int main(void)
 {
     /*uint16_t temp;*/
     // Initialize peripherals
-    peripheral_init();
+    init_peripheral();
     
     while(1)
     {
