@@ -12,14 +12,10 @@
 #include<avr/io.h>
 #include "Activity1.h"
 /**
- * @brief Change the state of the LED Pin according to the value of state
+ * @brief Value of status changes the state of LED 
  * 
- * @param state Pin level to which the LED Pin should be set
+ * @param Status pin which sets LED pin.
  */
-void LedStatus(uint8_t stat)
-{
-	LED_PORT = (stat << LED_PIN);
-}
 void InitLED(void)
 {
     DDRB|=(1<<PB0);
@@ -27,3 +23,8 @@ void InitLED(void)
     PORTD|=(1<<PD0);
     PORTD|=(1<<PD1);
 }
+void LedStatus(uint8_t status)
+{
+	PORT = (status << PIN);
+}
+
