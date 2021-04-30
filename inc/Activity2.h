@@ -1,6 +1,6 @@
 /**
  * @file Activity2.h
- * @author 260162 (you@domain.com)
+ * @author 260162 
  * @brief ADC function definition
  * @version 0.1
  * @date 2021-04-25
@@ -9,8 +9,8 @@
  * 
  */
 
-#ifndef __READADC_H__
-#define __READADC_H__
+#ifndef __ACTIVITY2_H__
+#define __ACTIVITY2_H__
 /**
  * @brief Reading the analog input and returning a digital 8bit value
  * 
