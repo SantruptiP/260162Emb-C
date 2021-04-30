@@ -5,8 +5,7 @@
 ## 
 
 Activity 1
-|:--:|:--:|
-![ON](file:///home/santrupti/LTTS_StepIn/EmbC/Activity1.png![image](https://user-images.githubusercontent.com/82207640/116649032-1c511400-a99c-11eb-843c-9956b338781a.png)
+![image](https://user-images.githubusercontent.com/82207640/116649032-1c511400-a99c-11eb-843c-9956b338781a.png)
 
 #### CI and Code Quality
 
