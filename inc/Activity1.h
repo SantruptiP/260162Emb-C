@@ -1,23 +1,20 @@
-#ifndef __LEDSTAT_H_
-#define __LEDSTAT_H_
+#ifndef __ACTIVITY1_H_
+#define __ACTIVITY1_H_
 /**
- * @file blinky.h
- * @author 260213 ()
+ * @file Activity1.h
+ * @author 260162 ()
  * @brief Activity_1
  * @version 0.1
- * @date 2021-04-24
+ * @date 2021-04-23
  * 
  * @copyright Copyright (c) 2021
  * 
  */
-
-
-
 /**
  * Include files
  */ 
 #include <avr/io.h>
-#include "ledstat.h"
+#include "Activity1.h"
 
 //Macro definition 
 
@@ -39,7 +36,7 @@
  * 
  * @param state Pin level to which the LED Pin should be set
  */
-void ledstat(uint8_t state);
+void LedStatus(uint8_t state);
 void InitLED(void);
 
-#endif /** __LEDSTAT_H_ */
+#endif /** __ACTIVITY1_H_ */
