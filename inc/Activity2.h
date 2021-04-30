@@ -12,11 +12,11 @@
 #ifndef __ACTIVITY2_H__
 #define __ACTIVITY2_H__
 /**
- * @brief Reading the analog input and returning a digital 8bit value
+ * @brief Analog input is read and digital 8 bit value is returned
  * 
- * @param ch 
+ * @param channel 
  * @return uint16_t 
  */
-uint16_t ReadADC(uint8_t ch);
-void InitADC();
+uint16_t ReadADC(uint8_t channel);
+void ADC_Init();
 #endif
