@@ -1,1 +1,1 @@
-@mainpage Blinky Example by Bharath G @subpage project_main.c
+@mainpage Embedded C by Santrupti Patil @subpage project_main.c
