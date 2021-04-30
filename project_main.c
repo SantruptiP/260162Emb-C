@@ -24,19 +24,19 @@
 
 void peripheral_init(void)
 {
-    /*Configure LED and Switch pins*/
-    InitLED();
-    /*Configure ADC registers and pins*/
-    InitADC();
-    /*Configure PWM registers and pins*/
-    InitPWM();
-    /*Configure UART serial communication pin*/
-    InitUART(103);
+    /*LED and Switch pins are Configured*/
+    LED_Init();
+    /*ADC registers are configured*/
+    ADC_Init();
+    /*PWM registers are configured*/
+    PWM_Init();
+    /*UART communication pin are configured*/
+    UART_Init(103);
 }
     
    
-uint16_t temp;
-char temp_data;
+uint16_t t;
+char td;
 int main(void)
 {
     /*uint16_t temp;*/
@@ -45,25 +45,25 @@ int main(void)
     
     while(1)
     {
-        if(SENSOR_ON) //If switch_1 is ON
+        if(SENSOR_ON) //switch 1 = ON
         {
-            if(HEAT_ON) //If switch_2 is ON
+            if(HEAT_ON) //switch 2 = ON
             {
-                ledstat(LED_ON);//LED is ON
-                temp=ReadADC(0);
-                temp_data = OutPWM(temp);
-                UARTwrite(temp_data);
+                LedStatus(LED_ON);//LED = 0N
+                t=ReadADC(0);
+                td = OutPWM(temp);
+                UARTwrite(td);
 
             }
             else
             {
                 
-                ledstat(LED_OFF);
+                LedStatus(LED_OFF);
             }
         }
         else
         {
-            ledstat(LED_OFF);//LED is OFF
+            LedStatus(LED_OFF);//LED = OFF
             OCR1A=0;
         }
     }
