@@ -1,7 +1,7 @@
 /**
  * @file Activity.h
  * @author 260162
- * @brief UART serial communication
+ * @brief UART communication
  * @version 0.1
  * @date 2021-04-28
  * 
@@ -12,21 +12,21 @@
 #define __ACTIVITY4_H__
 #include<avr/io.h>
 /**
- * @brief Inittialize UART serial communication ports
+ * @brief UART communication ports Initialized
  * 
- * @param ubrr 
+ * @param u_brr 
  */
-void InitUART(uint16_t ubrr);
+void InitUART(uint16_t u_brr);
 /**
- * @brief Read characters from UART port
- * @return char
+ * @brief From UART port read characters
+ * @return  a char value
  */
 char UARTread();
 /**
- * @brief Write characters to UART port
+ * @brief Characters are written to UART port
  * 
- * @param data 
+ * @param spec 
  */
-void UARTwrite(char data);
+void UARTwrite(char spec);
 
 #endif
