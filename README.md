@@ -8,6 +8,11 @@ Activity 1
 
 ![image](https://user-images.githubusercontent.com/82207640/116649032-1c511400-a99c-11eb-843c-9956b338781a.png)
 
+Activity 2
+
+![image](https://user-images.githubusercontent.com/82207640/116650102-2d9b2000-a99e-11eb-8c64-910011684a97.png)
+
+
 #### CI and Code Quality
 
 |Build|Cppcheck|Codacy|
