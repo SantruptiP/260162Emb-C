@@ -14,9 +14,9 @@
 /**
  * @brief Function definition
  * 
- * @param temp_value 
- * @return char
+ * @param temporary variable 
+ * @return a char value
  */
-char OutPWM(uint16_t temp_value);
-void InitPWM(void);
+char OutPWM(uint16_t t_val);
+void PWM_Init(void);
 #endif
