@@ -36,7 +36,7 @@
  * 
  * @param state Pin level to which the LED Pin should be set
  */
-void LedStatus(uint8_t state);
+void LedStatus(uint8_t stat);
 void InitLED(void);
 
 #endif /** __ACTIVITY1_H_ */
