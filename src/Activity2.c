@@ -19,7 +19,7 @@ void ADC_Init()
     
 }
 
-uint16_t ReadADC(uint8_t channel)
+uint16_t ReadADC(uint8_t ch)
 {
     //ADC Channel selected must be in the range 0-7
     ADMUX&=0xf8;
